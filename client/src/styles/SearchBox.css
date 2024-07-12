@@ -1,0 +1,152 @@
+.SearchBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.SearchBox__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Box {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 5px;
+  justify-content: center;
+  width: 90%;
+  height: 80%;
+}
+
+.IconBox__wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.IconBox__icon {
+  margin-right: 10px;
+  color: var(--nav-text-color);
+}
+
+.IconBox__child {
+  display: flex;
+  align-items: center;
+}
+
+.SearchBoxTextEditor {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  color: var(--nav-text-color);
+  width: 200px;
+  margin-top: 4px;
+}
+
+.SearchBoxTextDescription {
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--nav-text-color);
+}
+
+.SearchBoxTextDescription__title {
+  font-size: 16px;
+}
+
+.SearchBoxTextDescription__desc {
+  font-size: 12px;
+  color: var(--nav-text-color);
+}
+
+.SearchBoxTextDescription__child {
+  display: flex;
+  align-items: center;
+}
+
+.ficon-thin-arrow-down {
+  margin-left: 5px;
+}
+
+.SearchBox__searchButton {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.SearchBox__searchButton--active {
+  background-color: #005bb5;
+}
+
+.date {
+  position: absolute;
+  top: 90px;
+  z-index: 1001;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+  border-radius: 5px;
+  padding: 10px;
+  right: 41vw;
+}
+
+.options {
+  position: absolute;
+  top: 90px;
+  z-index: 1001;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+  border-radius: 5px;
+  padding: 20px;
+  width: 250px;
+  right: 12vw;
+
+}
+
+.optionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #0071c2;
+  color: var(--nav-text-color);
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.optionCounterNumber {
+  margin: 0 10px;
+  font-size: 16px;
+}
+.SearchBox .popup{
+  left: 5px;
+}

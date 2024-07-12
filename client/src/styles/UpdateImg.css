@@ -1,0 +1,123 @@
+/* UpdateImg.css */
+
+.update-img-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 620px;
+    z-index: 1;
+  }
+  .update-img-modal .header-update{
+    display: flex;
+    flex-direction: row;
+  }
+  .update-img-modal .header-update img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-top: 14px;
+  }
+  
+  .update-img-modal .header-update h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--nav-text-color);
+  }
+  
+  .update-img-modal h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .update-img-modal p {
+    color: var(--nav-text-color);
+    margin-bottom: 16px;
+  }
+  
+  .update-img-modal input[type='file'] {
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dadce0; /* Google Grey */
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .update-img-modal button {
+    background-color: #1a73e8; /* Google Blue */
+    color: var(--nav-text-color);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  
+  .update-img-modal button:hover {
+    background-color: #0d47a1; /* Darker shade of Google Blue */
+  }
+  .update-img-modal input[type='file'],
+  .update-img-modal input[type='text'] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #dadce0; /* Google Grey */
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--nav-text-color);
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+ 
+
+  
+  .update-img-modal input[type='file']:focus,
+  .update-img-modal input[type='text']:focus {
+    border-color: #1a73e8; /* Google Blue on focus */
+    outline: none;
+  }
+
+/* Style for buttons */
+.update-img-modal button {
+    background-color: #1877f2;
+    color: var(--nav-text-color);
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-img-modal button:hover {
+  background-color: #0d47a1; /* Darker shade of Google Blue */
+}
+
+/* Close button styles */
+.update-img-modal .close-button {
+  position: absolute;
+  top: 18px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--nav-text-color);
+}
+
+.update-img-modal .close-button:hover {
+  color: var(--nav-text-color);
+}

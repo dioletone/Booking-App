@@ -1,0 +1,45 @@
+.cart-btn {
+    position: relative; /* Make the container relative for absolute positioning of the number */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cart-btn:hover {
+    background-color: #f4f4f4;
+    transform: translateY(-2px);
+  }
+  
+  .cart-btn svg {
+    fill: #333;
+    transition: fill 0.3s ease;
+    
+  }
+  
+  .cart-btn:hover svg {
+    fill: #007bff;
+  }
+  
+  .cart-btn span {
+    position: absolute; /* Position the number absolutely within the relative container */
+    right: 2px; /* Adjust as needed */
+    bottom: 2px; /* Adjust as needed */
+    background-color: #fff;
+    border: .125rem solid var(--brand-primary-color, #ee4d2d);
+    border-radius: 2.75rem;
+    color: var(--brand-primary-color, #ee4d2d);
+    height: 1rem;
+    left: -1.125rem;
+    line-height: 1.2em;
+    margin-right: -.875rem;
+    min-width: .6875rem;
+    padding: 0 .3125rem;
+    position: relative;
+    text-align: center;
+    top: -.5rem;
+  }

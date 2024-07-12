@@ -1,0 +1,79 @@
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top : 10px;
+  }
+  
+  .login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .login-container button {
+    padding: 12px 20px;
+    background-color: #1877f2;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container button:hover {
+    background-color: #166fe5;
+  }
+  
+  .error-message {
+    color: #f02849;
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    align-self: start;
+  }
+  
+  .extra-links {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    display: flex ;
+    flex-direction: column;
+  }
+  
+  .extra-links a {
+    color: #1877f2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .extra-links a:hover {
+    color: #166fe5;
+  }
+  
+  .extra-links span {
+    margin: auto;
+  }
+  .close-btn{
+    position: relative;
+    left: 88%;
+    top: -70px; 
+  }
