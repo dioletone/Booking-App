@@ -1,0 +1,229 @@
+
+.header {
+    background-color: #f8f7f9;;
+  color: var(--nav-text-color);
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 3px; 
+    border-radius: 10px;
+    max-width: 800px;
+    position: relative;
+    top : 35px;
+    left: calc(21vw); /* Half of the width */
+
+    max-height: 350px;
+ }
+  .header .headerTitle{
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+  .headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0;
+  }
+  
+  .headerContainer.listMode {
+    margin: 20px 0 0 0;
+  }
+  
+  .headerList {
+    background-color: #fff;
+    color: var(--nav-text-color);
+
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0; /* Adjust this value as needed */
+    margin-bottom: -20px; /* Adjust this value as needed */
+    border-radius: 10px;
+  }
+  
+  
+  .headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .headerListItem.active {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .headerDesc {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .headerBtn {
+    padding: 12px 20px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .headerSearch {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-radius: 5px;
+    position:relative;
+    width: 100%;
+    max-width: 1024px;
+    gap:20px;
+    
+  }
+  
+  .headerIcon {
+    color: var(--nav-text-color);
+  }
+  
+  .headerSearchItem {
+    background-color: #fff;
+    color: var(--nav-text-color);
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: -10px; /* Adjust this value as needed */
+    border-radius: 10px;
+    width: 80%;
+    
+  }
+  
+  .headerSearchInput {
+    border: none;
+    outline: none;
+    max-width: 550px;
+    margin-top: 7px;
+  }
+  
+  .headerSearchText {
+    color: var(--nav-text-color);
+    cursor: pointer;
+    position: relative;
+    right: 220px;
+  }
+  
+  .date {
+    position: absolute;
+    top: 30px; /* Adjust this value to position it correctly */
+    left: 50%; /* Adjust the left position as needed */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1001; /* Ensure it is above other elements */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 395px; 
+    
+    /* Adjust width as per your design */
+}
+.rdrMonth{
+margin-left: 10px;
+}
+  
+  .options {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: var(--nav-text-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: var(--nav-text-color);
+  }
+  
+  .optionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: var(--nav-text-color);
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .optionCounterButton:disabled {
+    cursor: not-allowed;
+  }
+  .headerSearchButton{
+    position: relative;
+  top : 15px;
+  }
+  .header.headerBtn:hover{
+    background-color: #166fe5;
+
+  }
+  .searchBox {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .searchInput {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .header.scrolled .headerContent {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .header.scrolled .searchBox {
+    display: flex;
+  }
+  
+  .headerWrapper {
+    position: relative; /* Ensure relative positioning for child elements */
+  }
+  
+  .background-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    z-index: -1; /* Push the background behind other content */
+  }

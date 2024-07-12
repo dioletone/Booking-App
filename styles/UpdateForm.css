@@ -1,0 +1,102 @@
+#update-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #update-nav h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--nav-text-color);
+    margin: 0;
+  }
+  
+  #update-nav input {
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--nav-text-color);
+  }
+  
+  #update-nav input:focus {
+    outline: none;
+    border-color: #4285f4;
+  }
+  
+  .mmb-component-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .mmb-component-buttons input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline from buttons */
+  }
+  
+  .mmb-component-buttons input.btn-blueline {
+    background-color: #f1f3f4;
+    color: var(--nav-text-color);
+  }
+  
+  .mmb-component-buttons input.btn-blueline:hover {
+    background-color: #e2e4e6;
+  }
+  
+  .mmb-component-buttons input.btn-primary {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  .mmb-component-buttons input.btn-primary:hover {
+    background-color: #357ae8;
+  }
+  
+  .alert.alert-danger {
+    background-color: #fce8e6;
+    border: 1px solid #f5c2c7;
+    color: #d93025;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .alert.alert-danger ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .alert.alert-danger i {
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type='submit'],
+  input[type='button'] {
+    background-color: #4285f4;
+    color: var(--nav-text-color);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline from submit and button inputs */
+  }
+  
+  input[type='submit']:hover,
+  input[type='button']:hover {
+    background-color: #357ae8;
+  }
+  
+  .nav-choose {
+    display: flex;
+    flex-direction: column;
+  }
+  

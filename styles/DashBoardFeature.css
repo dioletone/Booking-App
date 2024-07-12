@@ -1,0 +1,34 @@
+.dashboard-feature {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    margin-right: 20px;
+    position: absolute;
+    top: 110px;
+    left: -400px;/* Spacing between DashBoardFeature and HotelFeature */
+}
+
+.dashboard-feature fieldset {
+    margin-bottom: 10px;
+}
+
+.dashboard-feature legend {
+    font-weight: bold;
+}
+
+.dashboard-feature label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.dashboard-feature input[type="checkbox"] {
+    margin-right: 8px;
+}
+.dashboard-feature .star-rating{
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+    
+}

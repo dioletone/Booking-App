@@ -1,0 +1,96 @@
+/* AccountButton.css */
+
+.account-button {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 280px; /* Adjust width as needed */
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Arial, sans-serif; /* Use a standard font like Arial */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-options {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+  width: 100%; /* Expand to full width */
+  display: flex;
+  flex-direction: column;
+   /* Layout items vertically */
+}
+
+.menu-options li {
+  padding: 12px 0;
+  flex:1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+}
+
+.menu-options li a {
+  color: var(--nav-text-color);
+  text-decoration: none;
+  font-weight: bold; /* Bold font for links */
+  font-size: 16px;
+  text-align: center;
+  /* Larger font size for links */
+}
+
+.menu-options li a:hover {
+  text-decoration: underline;
+}
+
+.menu-options li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--nav-text-color);
+  font-weight: bold; /* Bold font for buttons */
+  font-size: 16px; /* Larger font size for buttons */
+}
+
+.menu-options li button:hover {
+  text-decoration: underline;
+}
+.thumbnail-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.edit-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.edit-svg {
+  fill: #5f6368; /* Google's icon color */
+}
+
+.edit-svg:hover {
+  fill: #202124; /* Darker color on hover */
+}

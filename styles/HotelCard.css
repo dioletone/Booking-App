@@ -1,0 +1,122 @@
+
+  .hotel-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #f8f7f9;
+  }
+  
+  .hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hotel-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .hotel-card .hotel-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .hotel-card .hotel-info .hotel-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .hotel-card .hotel-info .hotel-type {
+    font-size: 14px;
+    color: var(--nav-text-color);
+  }
+  
+  .hotel-card .hotel-info .hotel-rating {
+    font-size: 16px;
+    color: var(--nav-text-color);
+  }
+  
+  .hotel-card .hotel-description {
+    font-size: 14px;
+    color: var(--nav-text-color);
+    line-height: 1.5;
+  }
+  
+  .hotel-card .hotel-cta {
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  .hotel-card .hotel-cta a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-weight: bold;
+  }
+  
+  .hotel-card .hotel-cta a:hover {
+    text-decoration: underline;
+  }
+  .hotel-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .hotel-photo {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .hotel-photo.fade-in {
+    opacity: 1;
+  }
+  
+  .hotel-photo.fade-out {
+    opacity: 0;
+  }
+  .star-rating {
+    display: flex;
+  }
+  
+  .filled-star {
+    color: gold;
+  }
+  
+  .empty-star {
+    color: lightgray;
+  }
+  
+  .half-star {
+    color: gold; /* You can use a different color or image for half stars */
+    position: relative;
+  }
+  
+  /* Example of using background images for half stars (if you have one) */
+  .half-star::before {
+    content: '★'; /* Use a full star with only half of it visible */
+    color: gold;
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .half-star::after {
+    color: lightgray;
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
+    left: 50%;
+  }
+ 

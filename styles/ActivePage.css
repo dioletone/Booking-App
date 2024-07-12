@@ -1,0 +1,49 @@
+/* General styling for the page */
+.verify-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the verify button */
+  .verify-app button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .verify-app button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the message area */
+  .verify-app p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Add some responsive styling */
+  @media (max-width: 600px) {
+    .verify-app {
+      padding: 20px;
+    }
+  
+    .verify-app button {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .verify-app p {
+      font-size: 16px;
+    }
+  }

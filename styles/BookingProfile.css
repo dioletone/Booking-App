@@ -1,0 +1,54 @@
+/* BookingProfile.css */
+
+.bookings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  .booking-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .booking-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .booking-item h4 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: var(--nav-text-color);
+  }
+  
+  .booking-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--nav-text-color);
+  }
+  
+  .delete-btn {
+    align-self: flex-end;
+    background-color: #e74c3c;
+    color: var(--nav-text-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
