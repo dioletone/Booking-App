@@ -1,0 +1,13 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "scripts": {
+    "install": "cd client && npm install && cd ../api && npm install",
+    "start": "concurrently \"npm run start:client\" \"npm run start:api\"",
+    "start:client": "cd client && npm start",
+    "start:api": "cd api && npm start"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
