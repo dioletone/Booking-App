@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "install": "cd client && npm install && cd ../api && npm install",
+    "build": "cd client && npm run build",
     "start": "concurrently \"npm run start:client\" \"npm run start:api\"",
-    "start:client": "cd client && npm start",
+    "start:client": "cd client && node --max-old-space-size=2048 node_modules/react-scripts/scripts/start.js",
     "start:api": "cd api && npm start"
   },
   "dependencies": {
