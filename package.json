@@ -5,8 +5,8 @@
     "install": "cd client && npm install && cd ../api && npm install",
     "build": "cd client && npm run build && cd ../api && npm run build",
     "start": "concurrently \"npm run start:client\" \"npm run start:api\"",
-    "start:client": "cd client && npm start",
-    "start:api": "cd api && npm start"
+    "start:client": "cd client && node --max-old-space-size=4096 node_modules/.bin/react-scripts start",
+    "start:api": "cd api && node --max-old-space-size=4096 index.js"
   },
   "dependencies": {
     "concurrently": "^8.2.2"
