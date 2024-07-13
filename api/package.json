@@ -4,9 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
-        "dev": "nodemon index.js", 
-  "build" : "nodemon build"
+    "start": "node --max-old-space-size=4096 index.js",
+    "dev": "nodemon --max-old-space-size=4096 index.js",
+    "build": "echo 'Building application...'"
     
   },
   "keywords": [],
